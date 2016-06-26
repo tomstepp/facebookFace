@@ -123,7 +123,7 @@ static void main_load(Window *w) {
   time_layer = text_layer_create(GRect(0, 50, bounds.size.w, 45));
   // style time layer
   text_layer_set_background_color(time_layer, GColorClear);
-  text_layer_set_text_color(time_layer, GColorCobaltBlue);
+  text_layer_set_text_color(time_layer, GColorBlue);
   text_layer_set_text(time_layer, "00:00");
   text_layer_set_text_alignment(time_layer, GTextAlignmentCenter);
   // create text layer font
@@ -133,7 +133,7 @@ static void main_load(Window *w) {
   // create weather layer
   weather_layer = text_layer_create(GRect(0, 140, bounds.size.w, 30));
   // style weather layer
-  text_layer_set_background_color(weather_layer, GColorCobaltBlue);
+  text_layer_set_background_color(weather_layer, GColorBlue);
   text_layer_set_text_color(weather_layer, GColorWhite);
   text_layer_set_text_alignment(weather_layer, GTextAlignmentCenter);
   text_layer_set_text(weather_layer, "?? %% ?? F");
@@ -143,7 +143,7 @@ static void main_load(Window *w) {
   // create facebook layer
   facebook_layer = text_layer_create(GRect(0, 10, bounds.size.w, 30));
   // style facebook layer
-  text_layer_set_background_color(facebook_layer, GColorCobaltBlue);
+  text_layer_set_background_color(facebook_layer, GColorBlue);
   text_layer_set_text_color(facebook_layer, GColorWhite);
   text_layer_set_text_alignment(facebook_layer, GTextAlignmentCenter);
   text_layer_set_text(facebook_layer, "facebook");
@@ -154,7 +154,7 @@ static void main_load(Window *w) {
   value_layer = text_layer_create(GRect(0, 100, bounds.size.w, 30));
   // style value layer
   text_layer_set_background_color(value_layer, GColorWhite);
-  text_layer_set_text_color(value_layer, GColorCobaltBlue);
+  text_layer_set_text_color(value_layer, GColorBlue);
   text_layer_set_text_alignment(value_layer, GTextAlignmentCenter);
   text_layer_set_text(value_layer, "FB Values");
   // create value layer font
