@@ -1,0 +1,45 @@
+{
+    "author": "oysterChatter",
+    "dependencies": {},
+    "keywords": [],
+    "name": "firstwatchface",
+    "pebble": {
+        "capabilities": [
+            "location"
+        ],
+        "displayName": "firstWatchFace",
+        "enableMultiJS": true,
+        "messageKeys": [
+            "TEMPERATURE",
+            "CONDITIONS"
+        ],
+        "projectType": "native",
+        "resources": {
+            "media": [
+                {
+                    "file": "fonts/extros.ttf",
+                    "name": "FONT_EXTROS_18",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "file": "fonts/extros.ttf",
+                    "name": "FONT_EXTROS_45",
+                    "targetPlatforms": null,
+                    "type": "font"
+                }
+            ]
+        },
+        "sdkVersion": "3",
+        "targetPlatforms": [
+            "aplite",
+            "basalt",
+            "chalk"
+        ],
+        "uuid": "01653bd5-0b1b-4e0c-ba85-aefeb402237e",
+        "watchapp": {
+            "watchface": true
+        }
+    },
+    "version": "1.0.0"
+}
