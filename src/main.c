@@ -120,9 +120,9 @@ static void main_load(Window *w) {
   GRect bounds = layer_get_bounds(window_layer);
   
   // create time layer
-  time_layer = text_layer_create(GRect(0, 50, bounds.size.w, 45));
+  time_layer = text_layer_create(GRect(0, 50, bounds.size.w, 50));
   // style time layer
-  text_layer_set_background_color(time_layer, GColorClear);
+  text_layer_set_background_color(time_layer, GColorWhite);
   text_layer_set_text_color(time_layer, GColorBlue);
   text_layer_set_text(time_layer, "00:00");
   text_layer_set_text_alignment(time_layer, GTextAlignmentCenter);
@@ -131,7 +131,7 @@ static void main_load(Window *w) {
   text_layer_set_font(time_layer, fonts_get_system_font(FONT_KEY_BITHAM_42_BOLD));
   
   // create weather layer
-  weather_layer = text_layer_create(GRect(0, 140, bounds.size.w, 30));
+  weather_layer = text_layer_create(GRect(0, 135, bounds.size.w, 25));
   // style weather layer
   text_layer_set_background_color(weather_layer, GColorBlue);
   text_layer_set_text_color(weather_layer, GColorWhite);
@@ -141,7 +141,7 @@ static void main_load(Window *w) {
   text_layer_set_font(weather_layer, fonts_get_system_font(FONT_KEY_GOTHIC_24));
   
   // create facebook layer
-  facebook_layer = text_layer_create(GRect(0, 10, bounds.size.w, 30));
+  facebook_layer = text_layer_create(GRect(0, 15, bounds.size.w, 25));
   // style facebook layer
   text_layer_set_background_color(facebook_layer, GColorBlue);
   text_layer_set_text_color(facebook_layer, GColorWhite);
@@ -185,7 +185,7 @@ static void init() {
   main_window = window_create();
   
   // update parameters - black background
-  window_set_background_color(main_window, GColorWhite);
+  window_set_background_color(main_window, GColorBlue);
   
   // set handlers for window elements
   window_set_window_handlers(main_window, (WindowHandlers) {
